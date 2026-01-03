@@ -1,0 +1,29 @@
+<odoo>
+    <record id="view_absence_tree" model="ir.ui.view">
+        <field name="name">absence.tree</field>
+        <field name="model">gestion.absence</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="etudiant_id"/>
+                <field name="date_absence"/>
+                <field name="justifie"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_absence_form" model="ir.ui.view">
+        <field name="name">absence.form</field>
+        <field name="model">gestion.absence</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="etudiant_id"/>
+                        <field name="date_absence"/>
+                        <field name="justifie"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

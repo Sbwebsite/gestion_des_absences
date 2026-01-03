@@ -1,0 +1,28 @@
+<odoo>
+    <record id="view_justification_tree" model="ir.ui.view">
+        <field name="name">justification.tree</field>
+        <field name="model">gestion.justification</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="absence_id"/>
+                <field name="date_justification"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_justification_form" model="ir.ui.view">
+        <field name="name">justification.form</field>
+        <field name="model">gestion.justification</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="absence_id"/>
+                        <field name="date_justification"/>
+                        <field name="motif"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

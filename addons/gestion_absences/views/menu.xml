@@ -1,0 +1,18 @@
+<odoo>
+    <menuitem id="menu_gestion_absences" name="Gestion des absences"/>
+
+    <menuitem id="menu_etudiant"
+              name="Étudiants"
+              parent="menu_gestion_absences"
+              action="action_etudiant"/>
+
+    <menuitem id="menu_absence"
+              name="Absences"
+              parent="menu_gestion_absences"
+              action="action_absence"/>
+
+    <menuitem id="menu_justification"
+              name="Justifications"
+              parent="menu_gestion_absences"
+              action="action_justification"/>
+</odoo>
